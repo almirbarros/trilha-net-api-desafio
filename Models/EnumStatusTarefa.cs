@@ -1,8 +1,14 @@
+using System.ComponentModel;
+
 namespace TrilhaApiDesafio.Models
 {
     public enum EnumStatusTarefa
     {
-        Pendente,
+        [Description("To Do")]
+        Fazer,
+        [Description("Doing")]
+        Fazendo,
+        [Description("Done")]
         Finalizado
     }
 }
